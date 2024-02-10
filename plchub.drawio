@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-02-10T21:09:25.263Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="E9HEOmQfZPV-97bVOU_N" version="23.1.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-10T21:19:35.788Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="8T44NMdkkYBIaOW_wQh2" version="23.1.2" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="1050" dy="1734" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1050" dy="565" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -79,8 +79,8 @@
             <mxPoint x="770" y="360" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-Tgwf3j5x3v7XqXq8PWF-2" value="Система приоритета управления.&lt;br&gt;При включении устройство пытается подключится к удаленному серверу снача через Ethernet, затем, в случае неудачи через беспроводную сеть. В случае неудачи цикл повторяется, в противном случае резервируется интерфейс для управления. Далее, в зависимости от того, к какому порту обратится сервер, резервируется протокол, по которому будет осуществляться управление и мониоринг. Попытки подключения по другому интерфейсу или порту - блокируются." style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="170" y="-11" width="260" height="230" as="geometry" />
+        <mxCell id="-Tgwf3j5x3v7XqXq8PWF-2" value="При включении устройство пытается подключится к удаленному серверу снача через Ethernet, затем, в случае неудачи через беспроводную сеть. В случае неудачи цикл повторяется, в противном случае попытки подключения прекращаются, сервер получает IP адрес устройста и осуществляет подключения к порту в зависимости от протокола (если понадобиться альтернативный протокол Modbus TCP ?) и производит обмен данными." style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="173" y="5" width="260" height="211" as="geometry" />
         </mxCell>
         <mxCell id="-Tgwf3j5x3v7XqXq8PWF-5" value="" style="curved=1;endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-Tgwf3j5x3v7XqXq8PWF-2">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
