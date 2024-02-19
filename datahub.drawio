@@ -1,9 +1,60 @@
-<mxfile host="app.diagrams.net" modified="2024-02-19T08:56:49.008Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" version="23.1.2" etag="FiYz27Gn3R00eskr23Hn" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-19T09:28:17.751Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="4utZvrKsM3bqf6_9lkqy" version="23.1.2" type="github">
   <diagram name="Страница — 1" id="7lkJwfgnF70PoXQp_iQh">
-    <mxGraphModel>
+    <mxGraphModel dx="1562" dy="853" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="jbfnTI8luh3HB56rcRLs-3" value="Серийный номер;&lt;br&gt;Количество подключенных устройств;&lt;br&gt;Список серийных номеров подключенных устройств 2 уровня;&lt;br&gt;Прочие данные.&amp;nbsp;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="450" y="230" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="jbfnTI8luh3HB56rcRLs-5" value="Устройство 1 уровня, хаб" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="470" y="168" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="jbfnTI8luh3HB56rcRLs-6" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="jbfnTI8luh3HB56rcRLs-3">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="330" y="330" as="sourcePoint" />
+            <mxPoint x="460" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jbfnTI8luh3HB56rcRLs-7" value="Устройство может запросить и поменять данные по серийным номерам устройств. Кодирование уровня можно включить в старшие биты серийных номеров." style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="200" y="230" width="130" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="jbfnTI8luh3HB56rcRLs-8" value="МЭК" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="370" y="285" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jbfnTI8luh3HB56rcRLs-9" value="Устройство 0 уровня" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="195" y="188" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jbfnTI8luh3HB56rcRLs-10" value="Серийный номер;&lt;br&gt;Количество подключенных устройств 3 уровня;&lt;br&gt;Массив, размером в 1000 серийных номеров устройств 3 уровня (возможно индекс массива соотвествует адресу устройства 3 уровня);&lt;br&gt;Массив с 1000 данными устройств 3 уровня (не обязательно хранить все сразу, достаточно по запросу устройства 1 уровня, запрашивать данные 3 уровня и передавать наверх);&lt;br&gt;Прочие данные." style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="840" y="200" width="260" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="jbfnTI8luh3HB56rcRLs-12" value="Адрес;&lt;br&gt;Серийный номер;&lt;br&gt;Прочие данные;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="1220" y="260" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="jbfnTI8luh3HB56rcRLs-13" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="jbfnTI8luh3HB56rcRLs-12" target="jbfnTI8luh3HB56rcRLs-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1240" y="330" as="sourcePoint" />
+            <mxPoint x="720" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jbfnTI8luh3HB56rcRLs-14" value="Проприетарный &lt;br&gt;протокол" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="285" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jbfnTI8luh3HB56rcRLs-15" value="Устройство 3 уровня, PLC" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1175" y="220" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jbfnTI8luh3HB56rcRLs-16" value="Устройство 2 уровня, PLC узел" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="870" y="160" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jbfnTI8luh3HB56rcRLs-17" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="jbfnTI8luh3HB56rcRLs-3" target="jbfnTI8luh3HB56rcRLs-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="720" y="340" as="sourcePoint" />
+            <mxPoint x="770" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jbfnTI8luh3HB56rcRLs-18" value="Modbus&lt;br&gt;(адресация устройств 2 уровня &lt;br&gt;от 1 до 30 включительно)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="650" y="260" width="200" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
